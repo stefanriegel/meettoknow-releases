@@ -1,9 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
   <channel>
     <title>MeetToKnow</title>
     <link>https://stefanriegel.github.io/meettoknow-releases/appcast.xml</link>
     <description>MeetToKnow beta updates</description>
     <language>en</language>
+    <item>
+      <title>Version 2026.10.06</title>
+      <pubDate>Tue, 06 Oct 2026 09:39:18 GMT</pubDate>
+      <sparkle:version>388</sparkle:version>
+      <sparkle:shortVersionString>2026.10.06</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:releaseNotesLink>https://github.com/stefanriegel/meettoknow-releases/releases/tag/v2026.10.06</sparkle:releaseNotesLink>
+      <enclosure url="https://github.com/stefanriegel/meettoknow-releases/releases/download/v2026.10.06/MeetToKnow-2026.10.06.dmg" length="19763609" type="application/octet-stream" sparkle:edSignature="PpE2601ZoDIbcCJdP7Qd9rsUM8E9n+O42H8cSETeC7tKmLuZJQLk+WmKr7Qu10QdTSO9oa17ip6cTZiK/P+oDQ==" />
+    </item>
   </channel>
 </rss>
