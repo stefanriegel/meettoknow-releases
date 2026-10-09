@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Tester guide
+    url: https://github.com/stefanriegel/meettoknow-releases/blob/main/docs/tester-guide.md
+    about: Check "Known limits" first.

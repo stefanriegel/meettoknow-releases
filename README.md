@@ -1,9 +1,12 @@
-# MeetToKnow beta releases
+# MeetToKnow beta
 
-Signed and notarized beta builds of MeetToKnow, a privacy-first, local-first meeting assistant for macOS 26 (Apple Silicon).
+Local-first meeting assistant for macOS 26 (Apple Silicon): records, transcribes, separates speakers, summarizes.
 
-- **Download:** the latest DMG is under [Releases](https://github.com/stefanriegel/meettoknow-releases/releases).
-- **Update feed (Sparkle):** https://stefanriegel.github.io/meettoknow-releases/appcast.xml — the app checks it itself; you don't need to open it.
-- **Tester guide:** install, permissions, what to test and how to report a problem are described in the guide sent with your invitation.
+- **Download:** [Releases](https://github.com/stefanriegel/meettoknow-releases/releases) — updates via **MeetToKnow ▸ Check for Updates…**
+- **[Tester guide](docs/tester-guide.md)** — install, what's in, what to test, known limits
+- **[Roadmap](docs/roadmap.md)**
+- **[Own AI server](docs/server-endpoint.md)** — OpenAI-compatible API spec
+- **[Agent testing](docs/agent-testing.md)** — drive the app with an AI agent
+- **Feedback:** [new issue](https://github.com/stefanriegel/meettoknow-releases/issues/new/choose) — no meeting content, problem reports privately
 
-Every DMG is Developer ID signed and notarized by Apple; every update is additionally signed with the app's EdDSA key, so the app only installs updates that come from this project.
+Builds are Developer ID signed and notarized; updates are EdDSA-signed. Feed: https://stefanriegel.github.io/meettoknow-releases/appcast.xml

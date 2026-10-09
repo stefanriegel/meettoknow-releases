@@ -1,0 +1,36 @@
+name: Bug report
+description: Something does not work as it should.
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        No meeting content (transcripts, summaries, titles, names). Problem report: send privately, not here.
+  - type: input
+    id: version
+    attributes: { label: MeetToKnow version, description: "MeetToKnow ▸ About MeetToKnow, e.g. 2026.10.08.5 (400)" }
+    validations: { required: true }
+  - type: input
+    id: system
+    attributes: { label: Mac and macOS, description: "e.g. MacBook Air M4, 24 GB, macOS 26.4" }
+    validations: { required: true }
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Recording, Call detection / automatic stop, Transcription, Speaker labels, Summary, Chat, Search, Import / Export, Settings / Setup, Updates, Other]
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes: { label: Steps to reproduce, placeholder: "1. …\n2. …\n3. …" }
+    validations: { required: true }
+  - type: textarea
+    id: expected
+    attributes: { label: What you expected and what happened }
+    validations: { required: true }
+  - type: textarea
+    id: logs
+    attributes: { label: Log lines (optional), description: "From ~/Library/Logs/MeetToKnow — they contain no meeting content.", render: text }
+  - type: dropdown
+    id: report
+    attributes: { label: Problem report sent privately?, options: ["No", "Yes"] }

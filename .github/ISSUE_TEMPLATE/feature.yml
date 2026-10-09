@@ -1,0 +1,14 @@
+name: Feature idea
+description: Something you would like MeetToKnow to do.
+labels: [enhancement, needs-triage]
+body:
+  - type: textarea
+    id: goal
+    attributes: { label: What do you want to do?, description: "The situation and what you were trying to achieve." }
+    validations: { required: true }
+  - type: textarea
+    id: idea
+    attributes: { label: How could it work? (optional) }
+  - type: dropdown
+    id: importance
+    attributes: { label: How much does it matter to you?, options: ["Nice to have", "Important", "Blocks me from using MeetToKnow"] }
