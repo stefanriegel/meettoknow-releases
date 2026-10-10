@@ -1,7 +1,7 @@
 # Agent testing
 
 How an AI agent (Claude Code, Codex, …) drives MeetToKnow on a tester's Mac to test features and file bugs.
-Version: 2026.10.08.5
+Version: 2026.10.09
 
 ## Rules
 
@@ -72,7 +72,7 @@ EOF
 
 - Room: record, then `say -v Anna "Guten Morgen, wir besprechen das Budget."` / `say -v Samantha "…"` (speakers on, no headphones).
 - Import: File ▸ Import Audio…, ⇧⌘G, path, Return, Return.
-- Calls: real Teams/Zoom/Webex call. Browser calls and FaceTime don't trigger suggestion or auto-stop.
+- Calls: real Teams/Zoom/Webex call. Browser calls trigger the suggestion only with a current calendar event that has a conference link; no auto-stop. FaceTime: neither.
 
 ## Logs
 
@@ -98,7 +98,7 @@ sqlite3 -readonly "$DB" "select count(*) from transcriptSegment where meetingId=
 
 `state`: `recording` → `processing` → `ready` | `failed`. Read transcript text locally only.
 
-Settings: `defaults read me.riegel.meettoknow <key>` — `suggestRecording`, `captureScreenshots`, `nameSpeakersFromCallApp`, `autoRecordArmed`, `localModelId`, `llmProvider`.
+Settings: `defaults read me.riegel.meettoknow <key>` — `suggestRecording`, `captureScreenshots`, `nameSpeakersFromCallApp`, `autoRecordArmed`, `localModelId`, `llmProvider` (`local`, `server`, `claude`, `gemini`).
 
 ## Recipes
 

@@ -1,11 +1,11 @@
 # Tester guide
 
-Version: 2026.10.08.5
+Version: 2026.10.09
 
 ## Requirements
 
 - macOS 26, Apple Silicon (M1 or newer), 8 GB RAM
-- ~1 GB disk for required models; on-device AI: +2.8 GB (< 16 GB RAM) or +4.6 GB (≥ 16 GB)
+- ~1 GB disk for required models (speech model ~630 MB); on-device AI: +2.8 GB (< 16 GB RAM) or +4.6 GB (≥ 16 GB)
 
 ## Install
 
@@ -33,13 +33,14 @@ Version: 2026.10.08.5
 ## What's in
 
 - Recording of calls (mic and call audio separate) and in-person meetings; pause/resume; crash recovery
-- **Record this call?** — bar at the top right when Teams, Zoom or Webex (apps) use the mic
+- **Record this call?** — bar at the top right when Teams, Zoom or Webex (apps) use the mic; browser calls only while a calendar event with a conference link is current
 - **Auto-stop after a call** — 15 s after the call app releases the mic, cut back to the hang-up; **Keep Recording** to continue
 - Auto-Record, calendar reminders
 - Live text and quick notes while recording
-- On-device transcription (Parakeet), speaker labels ("Me", "Speaker 1", …), renaming
-- Summaries (templates, meeting language), on-device or server
-- Chat with citations — server only for now
+- On-device transcription (Parakeet on the Neural Engine), speaker labels ("Me", "Speaker 1", …), renaming
+- Summaries (templates, meeting language): on-device, server, or `claude`/`gemini` command line
+- Chat with citations, on-device or server
+- Link a meeting to a calendar event (row menu)
 - Search, audio import, export (Markdown, bundle), Obsidian export
 - Screenshot text in search (off by default)
 - Problem report (**Help ▸ Report a Problem…**), signed updates
@@ -51,7 +52,9 @@ Version: 2026.10.08.5
 - [ ] Call with 3+ remote participants: are they separated?
 - [ ] In-person meeting, built-in mic
 - [ ] Meeting > 1 h
-- [ ] German and English summary; chat question with citation (server)
+- [ ] German and English summary; chat question with citation, on-device and server: does the citation jump to the quoted sentence?
+- [ ] First transcription after the update: "Preparing…" once, then fast; live text while recording
+- [ ] Browser call (Meet, Teams/Zoom web) with a calendar event: suggestion appears with the event title
 - [ ] Rename speaker, Re-transcribe, Delete Meeting
 - [ ] File ▸ Import Audio…
 - [ ] Quit during "Transcribing…", reopen: continues
@@ -60,7 +63,7 @@ Version: 2026.10.08.5
 ## Needs more testing
 
 - Real Teams/Zoom/Webex calls: suggestion over full-screen calls, mute, rejoin, device switch
-- German and mixed German/English accuracy and summaries
+- German and mixed German/English accuracy (new speech engine) and summaries
 - Several remote speakers; Zoom speaker names
 - 8 GB Macs with on-device AI
 - Bluetooth headsets, docks, external mics; sleep or lid closed while recording
@@ -73,10 +76,10 @@ Version: 2026.10.08.5
 
 ## Known limits
 
-- Chat needs a server (on-device chat is on the [roadmap](roadmap.md))
+- On-device chat searches once, then answers; follow-up searches need a server
 - Speaker labels are numbers; one person can show as two (rename to merge) or two as one
 - No Teams names yet; Zoom names only in speaker view
-- Safari and FaceTime calls: no suggestion, no auto-stop
+- Browser calls: suggestion only with a current calendar event; no auto-stop. FaceTime: neither
 - Short German phrases less accurate
 - Bluetooth headsets may drop to low quality while recording
 - Experimental features (Settings ▸ General): off, not part of the test
