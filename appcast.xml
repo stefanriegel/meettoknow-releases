@@ -6,6 +6,15 @@
     <description>MeetToKnow beta updates</description>
     <language>en</language>
     <item>
+      <title>Version 2026.10.20</title>
+      <pubDate>Tue, 20 Oct 2026 09:59:55 GMT</pubDate>
+      <sparkle:version>1562</sparkle:version>
+      <sparkle:shortVersionString>2026.10.20</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:releaseNotesLink>https://github.com/stefanriegel/meettoknow-releases/releases/tag/v2026.10.20</sparkle:releaseNotesLink>
+      <enclosure url="https://github.com/stefanriegel/meettoknow-releases/releases/download/v2026.10.20/MeetToKnow-2026.10.20.dmg" length="40332199" type="application/octet-stream" sparkle:edSignature="pQYeG1ExN+DF2rLqGkSGoBRbVEq5TDUg+6Fs/4t/IzAbnLDDWTrU4LvrpD2dObE7VpKWQr39VjkUGwy/kbdEAA==" />
+    </item>
+    <item>
       <title>Version 2026.10.15</title>
       <pubDate>Thu, 15 Oct 2026 01:35:46 GMT</pubDate>
       <sparkle:version>898</sparkle:version>
