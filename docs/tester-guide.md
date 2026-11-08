@@ -1,6 +1,6 @@
 # Tester guide
 
-Version: 2026.10.09
+Version: 2026.11.05
 
 ## Requirements
 
@@ -11,7 +11,7 @@ Version: 2026.10.09
 
 1. Download the DMG from [Releases](https://github.com/stefanriegel/meettoknow-releases/releases), drag MeetToKnow to Applications.
 2. Gatekeeper warning? Stop and report it — builds are notarized.
-3. Allow automatic update checks when asked (second launch). Manual: **MeetToKnow ▸ Check for Updates…**
+3. Updates: MeetToKnow checks once a day and tells you with a notification (never during a recording). Switch it off in **Settings ▸ General**. Manual: **MeetToKnow ▸ Check for Updates…**
 
 ## Permissions
 
@@ -29,6 +29,8 @@ Version: 2026.10.09
 
 - **On-device:** Gemma 4, download in **Settings ▸ AI** (E4B from 16 GB RAM, E2B below).
 - **Own server:** see [server-endpoint.md](server-endpoint.md).
+- **What goes to the AI:** with a server or a cloud command (`claude`, `gemini`, Codex), every summary includes your calendar guests' names (no e-mail addresses); the on-device model sends nothing.
+- **Chat in one meeting** with a command-line AI or the on-device model reads the whole transcript when it fits ("Read the whole meeting"), instead of search results. With a command-line AI on a paid plan, a long meeting can cost tens of thousands of tokens per question.
 
 ## What's in
 
