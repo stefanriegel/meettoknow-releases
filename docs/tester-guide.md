@@ -1,6 +1,6 @@
 # Tester guide
 
-Version: 2026.11.05
+Version: 2026.11.10
 
 ## Requirements
 
@@ -22,7 +22,7 @@ Version: 2026.11.05
 | Calendar | meeting titles, reminders (optional) |
 | Notifications | reminders, "Call ended", "Record this call?" (optional) |
 | Screen Recording | screenshot text (optional, off by default) |
-| Accessibility | Zoom speaker names (optional, off by default) |
+| Accessibility | screenshots of Teams and browser calls, Zoom speaker names (optional) |
 | Local Network | an AI server on your network |
 
 ## AI for summaries
@@ -57,6 +57,9 @@ Version: 2026.11.05
 - [ ] German and English summary; chat question with citation, on-device and server: does the citation jump to the quoted sentence?
 - [ ] First transcription after the update: "Preparing…" once, then fast; live text while recording
 - [ ] Browser call (Meet, Teams/Zoom web) with a calendar event: suggestion appears with the event title
+- [ ] Google Meet in Chrome and in Safari with other tabs open, Accessibility allowed: screenshots only while the meeting tab is shown, none from Meet's start page or another tab
+- [ ] Teams call with the Teams chat open, switching between chat and call for ~5 min: the meeting only has screenshots of the call window
+- [ ] Allow Accessibility from the hint in **Settings ▸ Recording**: the hint disappears, the next Teams call gets screenshots
 - [ ] Rename speaker, Re-transcribe, Delete Meeting
 - [ ] File ▸ Import Audio…
 - [ ] Quit during "Transcribing…", reopen: continues
