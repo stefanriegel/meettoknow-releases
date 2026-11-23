@@ -32,6 +32,10 @@ Version: 2026.11.10
 - **What goes to the AI:** with a server or a cloud command (`claude`, `gemini`, Codex), every summary includes your calendar guests' names (no e-mail addresses); the on-device model sends nothing.
 - **Chat in one meeting** with a command-line AI or the on-device model reads the whole transcript when it fits ("Read the whole meeting"), instead of search results. With a command-line AI on a paid plan, a long meeting can cost tens of thousands of tokens per question.
 
+## Spotlight (privacy)
+
+- **Spotlight (off by default):** **Settings ▸ Recording ▸ Spotlight** puts the title and summary of finished meetings into the macOS Spotlight index, so a search finds them outside the app. That index belongs to macOS, outside MeetToKnow's database; the app cannot show or protect what is in it. A meeting a deny rule excludes stays out, a deleted meeting is removed, and turning the switch off removes every entry again. A Spotlight result opens the meeting.
+
 ## What's in
 
 - Recording of calls (mic and call audio separate) and in-person meetings; pause/resume; crash recovery
